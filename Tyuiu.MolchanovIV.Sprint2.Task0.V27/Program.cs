@@ -49,7 +49,7 @@ namespace Tyuiu.MolchanovIV.Sprint2.Task0
             }
 
             Console.ReadLine();
-
+             
         }
     }
 }
