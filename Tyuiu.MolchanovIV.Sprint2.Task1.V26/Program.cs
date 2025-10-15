@@ -4,40 +4,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.MolchanovIV.Sprint2.Task0.V27.Lib;
+using Tyuiu.MolchanovIV.Sprint2.Task1.V26.Lib;
 
-namespace Tyuiu.MolchanovIV.Sprint2.Task0
+namespace Tyuiu.MolchanovIV.Sprint2.Task1.V26
 {
-    class Program
+    class Program()
     {
-        public static void Main(string[] args)
+        static public void Main(string[] args)
         {
-
             DataService ds = new DataService();
-            int x = 1305, y = 275;
 
             bool[] res = new bool[6];
-            res = ds.GetCompareOperations(x, y);
+            int a = 654, b = 671, c = 874, d = 137;
+
+            res = ds.GetLogicOperations(a, b, c, d);
 
             Console.Title = "Спринт #2 | Выполнил: Молчанов И. В. | РППб-25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
             Console.WriteLine("* Тема: Операции сравнения                                                *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #27                                                             *");
+            Console.WriteLine("* Задание #1                                                              *");
+            Console.WriteLine("* Вариант #26                                                             *");
             Console.WriteLine("* Выполнил: Молчанов Иван Владимирович | РППБ-25-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Написать программу из операций сравнений (==, !=, <, >, <=, >=,         *");
-            Console.WriteLine("* последовательность операций не должна нарушаться) и арифметических      *");
-            Console.WriteLine("* выражений, которая вернет логическую последовательность(массив):        *");
-            Console.WriteLine("* (True, False, True, False, False, True), при x = 1305, y = 275          *");
+            Console.WriteLine("* последовательность можно чередовать, но использовать один раз в         *");
+            Console.WriteLine("* выражении) и логических операций (|, &, ||, &&, !, ^, последовательность*");
+            Console.WriteLine("* операций не должна нарушаться), а также арифметических выражений,       *");
+            Console.WriteLine("* которая вернет логическую последовательность(массив):(True, True,       *");
+            Console.WriteLine("*  True, False, True, False), при a = 654, b = 671, c = 874, d = 137      *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("X = ", + x);
-            Console.WriteLine("Y = ", + y);
+            Console.WriteLine("A = ", +a);
+            Console.WriteLine("B = ", +b);
+            Console.WriteLine("C = ", +c);
+            Console.WriteLine("D = ", +d);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
@@ -49,7 +53,7 @@ namespace Tyuiu.MolchanovIV.Sprint2.Task0
             }
 
             Console.ReadLine();
-             
+
         }
     }
 }

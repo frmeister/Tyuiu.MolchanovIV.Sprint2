@@ -12,7 +12,7 @@ namespace Tyuiu.MolchanovIV.Sprint2.Task0.V27.Test
 
             bool[] res = new bool[6] { true, false, true, false, false, true };
 
-            Assert.AreEqual(res, ds.GetCompareOperations(1305,275));
+            CollectionAssert.AreEqual(res, ds.GetCompareOperations(1305,275));
 
         }
     }
