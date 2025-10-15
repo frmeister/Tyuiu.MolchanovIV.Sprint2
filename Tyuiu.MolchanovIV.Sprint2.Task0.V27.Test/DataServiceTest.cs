@@ -10,7 +10,7 @@ namespace Tyuiu.MolchanovIV.Sprint2.Task0.V27.Test
         {
             DataService ds = new DataService();
 
-            bool[] res = { false, true, false, true, false, true };
+            bool[] res = new bool[6] { true, false, true, false, false, true };
 
             Assert.AreEqual(res, ds.GetCompareOperations(1305,275));
 

@@ -9,32 +9,13 @@ namespace Tyuiu.MolchanovIV.Sprint2.Task0.V27.Lib
 
             bool[] result = new bool[6];
 
-            if (x == y)
-            {
-                result[0] = true; result[1] = false;
-            }
-            else
-            {
-                result[0] = false; result[1] = true;
-            }
-
-            if (x < y)
-            {
-                result[2] = true; result[3] = false;
-            }
-            else
-            {
-                result[2] = false; result[3] = true;
-            }
-
-            if (x <= y)
-            {
-                result[4] = true; result[5] = false;
-            }
-            if (x >= y)
-            {
-                result[4] = false; result[5] = true;
-            }
+            result[0] = x == y + 1030;
+            result[1] = x != y + 1030;
+            result[2] = x - 1300 < y;
+            result[3] = x - 1300 > y;
+            result[4] = x <= y;
+            result[5] = x >= y;
+       
             return result;
         }
     }
