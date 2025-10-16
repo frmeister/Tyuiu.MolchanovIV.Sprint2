@@ -4,55 +4,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.MolchanovIV.Sprint2.Task1.V26.Lib;
+using Tyuiu.MolchanovIV.Sprint2.Task3.V22.Lib;
 
-namespace Tyuiu.MolchanovIV.Sprint2.Task1.V26
+namespace Tyuiu.MolchanovIV.Sprint2.Task3.V22
 {
-    class Program()
+    class Program
     {
         static public void Main(string[] args)
         {
             DataService ds = new DataService();
 
-            bool[] res = new bool[6];
-            int a = 654, b = 671, c = 874, d = 137;
-
-            res = ds.GetLogicOperations(a, b, c, d);
+            double x = 0.0;
 
             Console.Title = "Спринт #2 | Выполнил: Молчанов И. В. | РППб-25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
             Console.WriteLine("* Тема: Алгоритмы разветвляющейся структуры                               *");
-            Console.WriteLine("* Задание #1                                                              *");
-            Console.WriteLine("* Вариант #26                                                             *");
+            Console.WriteLine("* Задание #3                                                              *");
+            Console.WriteLine("* Вариант #22                                                             *");
             Console.WriteLine("* Выполнил: Молчанов Иван Владимирович | РППБ-25-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу из операций сравнений (==, !=, <, >, <=, >=,         *");
-            Console.WriteLine("* последовательность можно чередовать, но использовать один раз в         *");
-            Console.WriteLine("* выражении) и логических операций (|, &, ||, &&, !, ^, последовательность*");
-            Console.WriteLine("* операций не должна нарушаться), а также арифметических выражений,       *");
-            Console.WriteLine("* которая вернет логическую последовательность(массив):(True, True,       *");
-            Console.WriteLine("*  True, False, True, False), при a = 654, b = 671, c = 874, d = 137      *");
+            Console.WriteLine("* Написать программу, которая вычисляет требуемое значение функции Y      *");
+            Console.WriteLine("* использованием вложенных оператор if-else, где пользователь вводит      *");
+            Console.WriteLine("* значение переменной X с клавиатуры. Округлить полученное значение до    *");
+            Console.WriteLine("* трех знаков после запятой.                                              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("A = ", +a);
-            Console.WriteLine("B = ", +b);
-            Console.WriteLine("C = ", +c);
-            Console.WriteLine("D = ", +d);
+            Console.WriteLine("Введите значение X:");
+            x = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            for (int i = 0; i < 6; i++)
-            {
-                Console.WriteLine(res[i]);
-            }
-
-            Console.ReadLine();
+            Console.WriteLine(Math.Round(ds.Calculate(x), 3));
 
         }
     }

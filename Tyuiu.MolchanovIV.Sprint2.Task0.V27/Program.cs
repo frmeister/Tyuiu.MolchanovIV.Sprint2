@@ -22,7 +22,7 @@ namespace Tyuiu.MolchanovIV.Sprint2.Task0
             Console.Title = "Спринт #2 | Выполнил: Молчанов И. В. | РППб-25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
-            Console.WriteLine("* Тема: Операции сравнения                                                *");
+            Console.WriteLine("* Тема: Алгоритмы разветвляющейся структуры                               *");
             Console.WriteLine("* Задание #0                                                              *");
             Console.WriteLine("* Вариант #27                                                             *");
             Console.WriteLine("* Выполнил: Молчанов Иван Владимирович | РППБ-25-1                        *");
