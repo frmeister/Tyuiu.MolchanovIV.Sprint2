@@ -13,26 +13,26 @@ namespace Tyuiu.MolchanovIV.Sprint2.Task3.V22.Lib
             {
                 res = x + (Math.Pow((x + 3) / (x - 1), x));
 
-                return res;
+                return Math.Round(res, 3);
 
             } else if (x == 0)
             {
                 res = (Math.Pow(x, 2) - Math.Cos(Math.Pow(x, 2)) + 10) / (Math.Pow(x, 2) - Math.Sin(Math.Pow(x, 2)) + 12);
 
-                return res;
+                return Math.Round(res, 3);
             } else if ((x < 2) && (x > -26))
             {
                 res = Math.Pow((3 + (2 / (Math.Pow(x, 2)))), x);
 
-                return res;
+                return Math.Round(res, 3);
             } else if (x < -26)
             {
                 res = x + 10 * x - (1 / x);
 
-                return res;
+                return Math.Round(res, 3);
             }
 
-            return res; 
+            return Math.Round(res, 3); 
         }
     }
 }
